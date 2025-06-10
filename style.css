@@ -1,0 +1,58 @@
+body {
+
+margin-block-start: auto;
+    background: linear-gradient(rgba(250,250,250,0.5), rgba(250,250,250,0.5)),
+url('anarky.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-block-size: 100vh;
+}
+    eader, main {
+    inline-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 2.5em;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.glow-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    background: #18d121;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 87, 34, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 20px rgba(255, 87, 34, 1);
+}
+
+.slide-in {
+    transform: translateX(-100%);
+    animation: slideIn 1.5s forwards;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
